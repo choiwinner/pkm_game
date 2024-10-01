@@ -9,10 +9,10 @@ from PIL import Image
 
 @st.cache_data()
 def random_make():
-    fig = random.randint(1,1252)
+    fig = random.randint(1,998)
     
     list_l = []
-    for i in range(1,1253):
+    for i in range(1,998):
         list_l.append(i)
 
     random.shuffle(list_l)
@@ -56,7 +56,7 @@ if __name__=='__main__':
     st.header("석진 하진 포켓몬 게임")
     st.subheader(f"신나는 모험이 이제 시작됩니다!")
 
-    df = pd.read_csv('포켓몬이름_998.csv',encoding='utf-8')
+    df = pd.read_csv('포켓몬이름_New_998.csv',encoding='utf-8')
 
     answer_list,wrong_list = random_make()
 
