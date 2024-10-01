@@ -56,7 +56,7 @@ if __name__=='__main__':
     st.header("석진 하진 포켓몬 게임")
     st.subheader(f"신나는 모험이 이제 시작됩니다!")
 
-    df = pd.read_csv('포켓몬이름.csv',encoding='utf-8')
+    df = pd.read_csv('포켓몬이름_998.csv',encoding='utf-8')
 
     answer_list,wrong_list = random_make()
 
