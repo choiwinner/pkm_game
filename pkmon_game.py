@@ -408,7 +408,7 @@ if __name__=='__main__':
 
     placeholder = st.empty()
 
-    df = pd.read_csv('포켓몬이름_New_998.csv',encoding='utf-8')
+    df = pd.read_csv('포켓몬이름_final_999.csv',encoding='utf-8')
 
     #start = st.session_state["start"]
 
