@@ -77,7 +77,7 @@ def quiz_one1(index_n,quiz_list,answer,img_1):
     #with placeholder.container():
     #st.write(f"{index_n}번째 문제입니다.")
     #status = st.radio('정답을 맞추세요', quiz_list)
-    #st.write(answer)
+    ##st.write(answer)
     #if status == answer:
     #    st.info('정답입니다.')
     #    st.session_state["stage"] = st.session_state["stage"]+1
@@ -95,7 +95,7 @@ def quiz_one1(index_n,quiz_list,answer,img_1):
     input_container = st.empty()
 
     st.write(f"{index_n}번째 문제입니다.")
-    st.write(answer)
+    #st.write(answer)
 
     # 이미지 파일을 불러옵니다.
     image_a = Image.open(f"{img_1}.png").resize((150,150))
@@ -123,7 +123,7 @@ def quiz_one1(index_n,quiz_list,answer,img_1):
 def quiz_one2(index_n,quiz_list,answer,img_1): 
 
     st.write(f"{index_n}번째 문제입니다.")
-    st.write(answer)
+    #st.write(answer)
 
     # 이미지 파일을 불러옵니다.
     image_a = Image.open(f"{img_1}.png").resize((150,150))
@@ -150,7 +150,7 @@ def quiz_one2(index_n,quiz_list,answer,img_1):
 def quiz_one3(index_n,quiz_list,answer,img_1): 
 
     st.write(f"{index_n}번째 문제입니다.")
-    st.write(answer)
+    #st.write(answer)
 
     # 이미지 파일을 불러옵니다.
     image_a = Image.open(f"{img_1}.png").resize((150,150))
@@ -177,7 +177,7 @@ def quiz_one3(index_n,quiz_list,answer,img_1):
 def quiz_one4(index_n,quiz_list,answer,img_1): 
 
     st.write(f"{index_n}번째 문제입니다.")
-    st.write(answer)
+    #st.write(answer)
 
     # 이미지 파일을 불러옵니다.
     image_a = Image.open(f"{img_1}.png").resize((150,150))
@@ -204,7 +204,7 @@ def quiz_one4(index_n,quiz_list,answer,img_1):
 def quiz_one5(index_n,quiz_list,answer,img_1): 
 
     st.write(f"{index_n}번째 문제입니다.")
-    st.write(answer)
+    #st.write(answer)
 
     # 이미지 파일을 불러옵니다.
     image_a = Image.open(f"{img_1}.png").resize((150,150))
@@ -231,7 +231,7 @@ def quiz_one5(index_n,quiz_list,answer,img_1):
 def quiz_one6(index_n,quiz_list,answer,img_1): 
 
     st.write(f"{index_n}번째 문제입니다.")
-    st.write(answer)
+    #st.write(answer)
 
     # 이미지 파일을 불러옵니다.
     image_a = Image.open(f"{img_1}.png").resize((150,150))
@@ -258,7 +258,7 @@ def quiz_one6(index_n,quiz_list,answer,img_1):
 def quiz_one7(index_n,quiz_list,answer,img_1): 
 
     st.write(f"{index_n}번째 문제입니다.")
-    st.write(answer)
+    #st.write(answer)
 
     # 이미지 파일을 불러옵니다.
     image_a = Image.open(f"{img_1}.png").resize((150,150))
@@ -285,7 +285,7 @@ def quiz_one7(index_n,quiz_list,answer,img_1):
 def quiz_one8(index_n,quiz_list,answer,img_1): 
 
     st.write(f"{index_n}번째 문제입니다.")
-    st.write(answer)
+    #st.write(answer)
 
     # 이미지 파일을 불러옵니다.
     image_a = Image.open(f"{img_1}.png").resize((150,150))
@@ -312,7 +312,7 @@ def quiz_one8(index_n,quiz_list,answer,img_1):
 def quiz_one9(index_n,quiz_list,answer,img_1): 
 
     st.write(f"{index_n}번째 문제입니다.")
-    st.write(answer)
+    #st.write(answer)
 
     # 이미지 파일을 불러옵니다.
     image_a = Image.open(f"{img_1}.png").resize((150,150))
@@ -339,7 +339,7 @@ def quiz_one9(index_n,quiz_list,answer,img_1):
 def quiz_one10(index_n,quiz_list,answer,img_1): 
 
     st.write(f"{index_n}번째 문제입니다.")
-    st.write(answer)
+    #st.write(answer)
 
     # 이미지 파일을 불러옵니다.
     image_a = Image.open(f"{img_1}.png").resize((150,150))
