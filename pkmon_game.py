@@ -14,7 +14,7 @@ def random_make():
     
     list_l = []
 
-    for i in range(1,998):
+    for i in range(1,990):
         list_l.append(i)
 
     random.shuffle(list_l)
@@ -408,7 +408,8 @@ if __name__=='__main__':
 
     placeholder = st.empty()
 
-    df = pd.read_csv('포켓몬이름_final_999.csv',encoding='utf-8')
+    #df = pd.read_csv('포켓몬이름_final_999.csv',encoding='utf-8')
+    df = pd.read_csv('포켓몬이름_final_990.csv',encoding='utf-8')
 
     #start = st.session_state["start"]
 
@@ -417,7 +418,6 @@ if __name__=='__main__':
 
     else:
         answer_list,wrong_list = random_make()
-
 
         #map 함수 사용하기 : list(map(함수,list))
         answer_list2 =[]
@@ -429,42 +429,53 @@ if __name__=='__main__':
         list_f = random_make3(answer_list2,wrong_list2)
 
         if st.session_state['stage'] == 1:
+            st.audio("audio/retro-8bit-happy-videogame-music-243997.mp3", format="audio/mpeg", loop=True,autoplay=True)
+
             placeholder.empty()
             with placeholder.container():
                 quiz_one1(st.session_state["stage"],list_f[0],answer_list2[0],answer_list[0])
         elif st.session_state['stage'] == 2:
+            st.audio("audio/retro-8bit-happy-videogame-music-243997.mp3", format="audio/mpeg", loop=True,autoplay=True)
             placeholder.empty()
             with placeholder.container():
                 quiz_one2(st.session_state["stage"],list_f[1],answer_list2[1],answer_list[1])
         elif st.session_state['stage'] == 3:
+            st.audio("audio/retro-8bit-happy-videogame-music-243997.mp3", format="audio/mpeg", loop=True,autoplay=True)
             placeholder.empty()
             with placeholder.container():
                 quiz_one3(st.session_state["stage"],list_f[2],answer_list2[2],answer_list[2])
         elif st.session_state['stage'] == 4:
+            st.audio("audio/retro-8bit-happy-videogame-music-243997.mp3", format="audio/mpeg", loop=True,autoplay=True)
             placeholder.empty()
             with placeholder.container():
                 quiz_one4(st.session_state["stage"],list_f[3],answer_list2[3],answer_list[3])        
         elif st.session_state['stage'] == 5:
+            st.audio("audio/retro-8bit-happy-videogame-music-243997.mp3", format="audio/mpeg", loop=True,autoplay=True)
             placeholder.empty()
             with placeholder.container():
                 quiz_one5(st.session_state["stage"],list_f[4],answer_list2[4],answer_list[4])
         elif st.session_state['stage'] == 6:
+            st.audio("audio/retro-8bit-happy-videogame-music-243997.mp3", format="audio/mpeg", loop=True,autoplay=True)
             placeholder.empty()
             with placeholder.container():
                 quiz_one6(st.session_state["stage"],list_f[5],answer_list2[5],answer_list[5])
         elif st.session_state['stage'] == 7:
+            st.audio("audio/retro-8bit-happy-videogame-music-243997.mp3", format="audio/mpeg", loop=True,autoplay=True)
             placeholder.empty()
             with placeholder.container():
                 quiz_one7(st.session_state["stage"],list_f[6],answer_list2[6],answer_list[6])
         elif st.session_state['stage'] == 8:
+            st.audio("audio/retro-8bit-happy-videogame-music-243997.mp3", format="audio/mpeg", loop=True,autoplay=True)
             placeholder.empty()
             with placeholder.container():
                 quiz_one8(st.session_state["stage"],list_f[7],answer_list2[7],answer_list[7])
         elif st.session_state['stage'] == 9:
+            st.audio("audio/retro-8bit-happy-videogame-music-243997.mp3", format="audio/mpeg", loop=True,autoplay=True)
             placeholder.empty()
             with placeholder.container():
                 quiz_one9(st.session_state["stage"],list_f[8],answer_list2[8],answer_list[8])
         elif st.session_state['stage'] == 10:
+            st.audio("audio/retro-8bit-happy-videogame-music-243997.mp3", format="audio/mpeg", loop=True,autoplay=True)
             placeholder.empty()
             with placeholder.container():
                 quiz_one10(st.session_state["stage"],list_f[9],answer_list2[9],answer_list[9])
@@ -476,20 +487,21 @@ if __name__=='__main__':
                 if final_score >= 90:
                     st.write(f'{user}님 당신은 진정한 :blue[포켓몬 지식왕!!]')
                     st.write(f'최종 점수는 :red[{final_score}]점 입니다.')
-                    st.audio("audio/winning-218995.mp3", format="audio/mpeg", loop=True,autoplay=True)
+                    st.audio("audio/winning-218995.mp3", format="audio/mpeg", loop=False,autoplay=True)
                 
                 elif final_score >= 70:
                     st.write(f'{user}님 포켓몬 좀 아시는 군요!!')
                     st.write(f'최종 점수는 :red[{final_score}]점 입니다.')
-                    st.audio("audio/winning-218995.mp3", format="audio/mpeg", loop=True,autoplay=True)
+                    st.audio("audio/level-win-6416.mp3", format="audio/mpeg", loop=False,autoplay=True)
 
                 elif final_score >= 50:
                     st.warning(f'{user}님 포켓몬 공부가 필요해요!')
                     st.write(f'최종 점수는 :red[{final_score}]점 입니다.')
-                    st.audio("audio/winning-218995.mp3", format="audio/mpeg", loop=True,autoplay=True)
+                    st.audio("audio/negative_beeps-6008.mp3", format="audio/mpeg", loop=False,autoplay=True)
 
                 else:
                     st.error(f'{user}님 당신은 포린이네요 ㅠㅠ')
-                    st.write(f'최종 점수는 :red[{final_score}]점 입니다.')             
+                    st.write(f'최종 점수는 :red[{final_score}]점 입니다.')
+                    st.audio("audio/game-over-31-179699.mp3", format="audio/mpeg", loop=False,autoplay=True)             
         
                 st.stop()
