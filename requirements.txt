@@ -1,0 +1,7 @@
+﻿streamlit
+pandas
+numpy
+random
+streamlit
+PIL
+time
