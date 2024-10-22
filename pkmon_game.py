@@ -476,14 +476,17 @@ if __name__=='__main__':
                 if final_score >= 90:
                     st.write(f'{user}님 당신은 진정한 :blue[포켓몬 지식왕!!]')
                     st.write(f'최종 점수는 :red[{final_score}]점 입니다.')
+                    st.audio("audio/winning-218995.mp3", format="audio/mpeg", loop=True,autoplay=True)
                 
                 elif final_score >= 70:
                     st.write(f'{user}님 포켓몬 좀 아시는 군요!!')
                     st.write(f'최종 점수는 :red[{final_score}]점 입니다.')
+                    st.audio("audio/winning-218995.mp3", format="audio/mpeg", loop=True,autoplay=True)
 
                 elif final_score >= 50:
                     st.warning(f'{user}님 포켓몬 공부가 필요해요!')
                     st.write(f'최종 점수는 :red[{final_score}]점 입니다.')
+                    st.audio("audio/winning-218995.mp3", format="audio/mpeg", loop=True,autoplay=True)
 
                 else:
                     st.error(f'{user}님 당신은 포린이네요 ㅠㅠ')
