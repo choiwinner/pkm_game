@@ -100,14 +100,19 @@ def quiz_one1(index_n,quiz_list,answer,img_1):
     # 이미지 파일을 불러옵니다.
     image_a = Image.open(f"{img_1}.png").resize((150,150))
     # 이미지를 표시합니다.
-    st.image(image_a) 
+    st.image(image_a)
 
-    for index,i in enumerate(quiz_list):
-        st.write(f'{index+1}. {i}')
+    #radio 버튼으로 문제내기
+    option = st.radio('정답 번호를 선택하세요.', 
+                    ("아래에서 선택하세요",quiz_list[0], quiz_list[1] , quiz_list[2] , quiz_list[3]),
+                    index=0
+                    )
+    st.write(answer)
+    if (option == '아래에서 선택하세요'):
+        st.empty()
 
-    if val1 := int(st.number_input('정답 번호를 입력하세요.',key='key1')):
-
-        if quiz_list[val1-1] == answer:
+    else:
+        if option == answer:
             st.info('정답입니다.')
             st.session_state["stage"] = st.session_state["stage"]+1
             st.session_state["health"] = st.session_state["health"]+10
@@ -118,6 +123,24 @@ def quiz_one1(index_n,quiz_list,answer,img_1):
             st.session_state["stage"] = st.session_state["stage"]+1
             time.sleep(2)
             st.rerun()
+
+    #text로 문제내기
+    #for index,i in enumerate(quiz_list):
+    #    st.write(f'{index+1}. {i}')
+
+    #if val1 := int(st.number_input('정답 번호를 입력하세요.',key='key1')):
+
+    #    if quiz_list[val1-1] == answer:
+    #        st.info('정답입니다.')
+    #        st.session_state["stage"] = st.session_state["stage"]+1
+    #        st.session_state["health"] = st.session_state["health"]+10
+    #        time.sleep(2)
+    #        st.rerun()
+    #    else:
+    #        st.warning('오답입니다.')
+    #        st.session_state["stage"] = st.session_state["stage"]+1
+    #        time.sleep(2)
+    #        st.rerun()
     
 
 def quiz_one2(index_n,quiz_list,answer,img_1): 
@@ -128,14 +151,19 @@ def quiz_one2(index_n,quiz_list,answer,img_1):
     # 이미지 파일을 불러옵니다.
     image_a = Image.open(f"{img_1}.png").resize((150,150))
     # 이미지를 표시합니다.
-    st.image(image_a)     
+    st.image(image_a)
 
-    for index,i in enumerate(quiz_list):
-        st.write(f'{index+1}. {i}')
+    #radio 버튼으로 문제내기
+    option = st.radio('정답 번호를 선택하세요.', 
+                    ("아래에서 선택하세요",quiz_list[0], quiz_list[1] , quiz_list[2] , quiz_list[3]),
+                    index=0
+                    )
+    st.write(answer)
+    if (option == '아래에서 선택하세요'):
+        st.empty()
 
-    if val2 := int(st.number_input('정답 번호를 입력하세요.',key='key2')):
-
-        if quiz_list[val2-1] == answer:
+    else:
+        if option == answer:
             st.info('정답입니다.')
             st.session_state["stage"] = st.session_state["stage"]+1
             st.session_state["health"] = st.session_state["health"]+10
@@ -146,6 +174,24 @@ def quiz_one2(index_n,quiz_list,answer,img_1):
             st.session_state["stage"] = st.session_state["stage"]+1
             time.sleep(2)
             st.rerun()
+
+    #text로 문제내기
+    #for index,i in enumerate(quiz_list):
+    #    st.write(f'{index+1}. {i}')
+#
+    #if val2 := int(st.number_input('정답 번호를 입력하세요.',key='key2')):
+#
+    #    if quiz_list[val2-1] == answer:
+    #        st.info('정답입니다.')
+    #        st.session_state["stage"] = st.session_state["stage"]+1
+    #        st.session_state["health"] = st.session_state["health"]+10
+    #        time.sleep(2)
+    #        st.rerun()
+    #    else:
+    #        st.warning('오답입니다.')
+    #        st.session_state["stage"] = st.session_state["stage"]+1
+    #        time.sleep(2)
+    #        st.rerun()
 
 def quiz_one3(index_n,quiz_list,answer,img_1): 
 
@@ -156,13 +202,18 @@ def quiz_one3(index_n,quiz_list,answer,img_1):
     image_a = Image.open(f"{img_1}.png").resize((150,150))
     # 이미지를 표시합니다.
     st.image(image_a)
-    
-    for index,i in enumerate(quiz_list):
-        st.write(f'{index+1}. {i}')
 
-    if val3 := int(st.number_input('정답 번호를 입력하세요.',key='key3')):
+    #radio 버튼으로 문제내기
+    option = st.radio('정답 번호를 선택하세요.', 
+                    ("아래에서 선택하세요",quiz_list[0], quiz_list[1] , quiz_list[2] , quiz_list[3]),
+                    index=0
+                    )
+    st.write(answer)
+    if (option == '아래에서 선택하세요'):
+        st.empty()
 
-        if quiz_list[val3-1] == answer:
+    else:
+        if option == answer:
             st.info('정답입니다.')
             st.session_state["stage"] = st.session_state["stage"]+1
             st.session_state["health"] = st.session_state["health"]+10
@@ -173,6 +224,25 @@ def quiz_one3(index_n,quiz_list,answer,img_1):
             st.session_state["stage"] = st.session_state["stage"]+1
             time.sleep(2)
             st.rerun()
+
+    #text로 문제내기
+   
+    #for index,i in enumerate(quiz_list):
+    #    st.write(f'{index+1}. {i}')
+#
+    #if val3 := int(st.number_input('정답 번호를 입력하세요.',key='key3')):
+#
+    #    if quiz_list[val3-1] == answer:
+    #        st.info('정답입니다.')
+    #        st.session_state["stage"] = st.session_state["stage"]+1
+    #        st.session_state["health"] = st.session_state["health"]+10
+    #        time.sleep(2)
+    #        st.rerun()
+    #    else:
+    #        st.warning('오답입니다.')
+    #        st.session_state["stage"] = st.session_state["stage"]+1
+    #        time.sleep(2)
+    #        st.rerun()
 
 def quiz_one4(index_n,quiz_list,answer,img_1): 
 
@@ -182,14 +252,19 @@ def quiz_one4(index_n,quiz_list,answer,img_1):
     # 이미지 파일을 불러옵니다.
     image_a = Image.open(f"{img_1}.png").resize((150,150))
     # 이미지를 표시합니다.
-    st.image(image_a)     
+    st.image(image_a)
 
-    for index,i in enumerate(quiz_list):
-        st.write(f'{index+1}. {i}')
+    #radio 버튼으로 문제내기
+    option = st.radio('정답 번호를 선택하세요.', 
+                    ("아래에서 선택하세요",quiz_list[0], quiz_list[1] , quiz_list[2] , quiz_list[3]),
+                    index=0
+                    )
+    st.write(answer)
+    if (option == '아래에서 선택하세요'):
+        st.empty()
 
-    if val4 := int(st.number_input('정답 번호를 입력하세요.',key='key4')):
-
-        if quiz_list[val4-1] == answer:
+    else:
+        if option == answer:
             st.info('정답입니다.')
             st.session_state["stage"] = st.session_state["stage"]+1
             st.session_state["health"] = st.session_state["health"]+10
@@ -200,6 +275,26 @@ def quiz_one4(index_n,quiz_list,answer,img_1):
             st.session_state["stage"] = st.session_state["stage"]+1
             time.sleep(2)
             st.rerun()
+
+    #text로 문제내기    
+
+
+#    for index,i in enumerate(quiz_list):
+#        st.write(f'{index+1}. {i}')
+#
+#    if val4 := int(st.number_input('정답 번호를 입력하세요.',key='key4')):
+#
+#        if quiz_list[val4-1] == answer:
+#            st.info('정답입니다.')
+#            st.session_state["stage"] = st.session_state["stage"]+1
+#            st.session_state["health"] = st.session_state["health"]+10
+#            time.sleep(2)
+#            st.rerun()
+#        else:
+#            st.warning('오답입니다.')
+#            st.session_state["stage"] = st.session_state["stage"]+1
+#            time.sleep(2)
+#            st.rerun()
 
 def quiz_one5(index_n,quiz_list,answer,img_1): 
 
@@ -209,14 +304,19 @@ def quiz_one5(index_n,quiz_list,answer,img_1):
     # 이미지 파일을 불러옵니다.
     image_a = Image.open(f"{img_1}.png").resize((150,150))
     # 이미지를 표시합니다.
-    st.image(image_a)    
+    st.image(image_a)
 
-    for index,i in enumerate(quiz_list):
-        st.write(f'{index+1}. {i}')
+    #radio 버튼으로 문제내기
+    option = st.radio('정답 번호를 선택하세요.', 
+                    ("아래에서 선택하세요",quiz_list[0], quiz_list[1] , quiz_list[2] , quiz_list[3]),
+                    index=0
+                    )
+    st.write(answer)
+    if (option == '아래에서 선택하세요'):
+        st.empty()
 
-    if val5 := int(st.number_input('정답 번호를 입력하세요.',key='key5')):
-
-        if quiz_list[val5-1] == answer:
+    else:
+        if option == answer:
             st.info('정답입니다.')
             st.session_state["stage"] = st.session_state["stage"]+1
             st.session_state["health"] = st.session_state["health"]+10
@@ -227,6 +327,25 @@ def quiz_one5(index_n,quiz_list,answer,img_1):
             st.session_state["stage"] = st.session_state["stage"]+1
             time.sleep(2)
             st.rerun()
+
+    #text로 문제내기
+
+#    for index,i in enumerate(quiz_list):
+#        st.write(f'{index+1}. {i}')
+#
+#    if val5 := int(st.number_input('정답 번호를 입력하세요.',key='key5')):
+#
+#        if quiz_list[val5-1] == answer:
+#            st.info('정답입니다.')
+#            st.session_state["stage"] = st.session_state["stage"]+1
+#            st.session_state["health"] = st.session_state["health"]+10
+#            time.sleep(2)
+#            st.rerun()
+#        else:
+#            st.warning('오답입니다.')
+#            st.session_state["stage"] = st.session_state["stage"]+1
+#            time.sleep(2)
+#            st.rerun()
 
 def quiz_one6(index_n,quiz_list,answer,img_1): 
 
@@ -236,14 +355,19 @@ def quiz_one6(index_n,quiz_list,answer,img_1):
     # 이미지 파일을 불러옵니다.
     image_a = Image.open(f"{img_1}.png").resize((150,150))
     # 이미지를 표시합니다.
-    st.image(image_a)     
+    st.image(image_a)
 
-    for index,i in enumerate(quiz_list):
-        st.write(f'{index+1}. {i}')
+    #radio 버튼으로 문제내기
+    option = st.radio('정답 번호를 선택하세요.', 
+                    ("아래에서 선택하세요",quiz_list[0], quiz_list[1] , quiz_list[2] , quiz_list[3]),
+                    index=0
+                    )
+    st.write(answer)
+    if (option == '아래에서 선택하세요'):
+        st.empty()
 
-    if val6 := int(st.number_input('정답 번호를 입력하세요.',key='key6')):
-
-        if quiz_list[val6-1] == answer:
+    else:
+        if option == answer:
             st.info('정답입니다.')
             st.session_state["stage"] = st.session_state["stage"]+1
             st.session_state["health"] = st.session_state["health"]+10
@@ -254,6 +378,26 @@ def quiz_one6(index_n,quiz_list,answer,img_1):
             st.session_state["stage"] = st.session_state["stage"]+1
             time.sleep(2)
             st.rerun()
+
+    #text로 문제내기
+
+
+#    for index,i in enumerate(quiz_list):
+#        st.write(f'{index+1}. {i}')
+#
+#    if val6 := int(st.number_input('정답 번호를 입력하세요.',key='key6')):
+#
+#        if quiz_list[val6-1] == answer:
+#            st.info('정답입니다.')
+#            st.session_state["stage"] = st.session_state["stage"]+1
+#            st.session_state["health"] = st.session_state["health"]+10
+#            time.sleep(2)
+#            st.rerun()
+#        else:
+#            st.warning('오답입니다.')
+#            st.session_state["stage"] = st.session_state["stage"]+1
+#            time.sleep(2)
+#            st.rerun()
 
 def quiz_one7(index_n,quiz_list,answer,img_1): 
 
@@ -265,12 +409,17 @@ def quiz_one7(index_n,quiz_list,answer,img_1):
     # 이미지를 표시합니다.
     st.image(image_a)       
 
-    for index,i in enumerate(quiz_list):
-        st.write(f'{index+1}. {i}')
+    #radio 버튼으로 문제내기
+    option = st.radio('정답 번호를 선택하세요.', 
+                    ("아래에서 선택하세요",quiz_list[0], quiz_list[1] , quiz_list[2] , quiz_list[3]),
+                    index=0
+                    )
+    st.write(answer)
+    if (option == '아래에서 선택하세요'):
+        st.empty()
 
-    if val7 := int(st.number_input('정답 번호를 입력하세요.',key='key7')):
-
-        if quiz_list[val7-1] == answer:
+    else:
+        if option == answer:
             st.info('정답입니다.')
             st.session_state["stage"] = st.session_state["stage"]+1
             st.session_state["health"] = st.session_state["health"]+10
@@ -281,6 +430,25 @@ def quiz_one7(index_n,quiz_list,answer,img_1):
             st.session_state["stage"] = st.session_state["stage"]+1
             time.sleep(2)
             st.rerun()
+
+    #text로 문제내기
+
+#    for index,i in enumerate(quiz_list):
+#        st.write(f'{index+1}. {i}')
+#
+#    if val7 := int(st.number_input('정답 번호를 입력하세요.',key='key7')):
+#
+#        if quiz_list[val7-1] == answer:
+#            st.info('정답입니다.')
+#            st.session_state["stage"] = st.session_state["stage"]+1
+#            st.session_state["health"] = st.session_state["health"]+10
+#            time.sleep(2)
+#            st.rerun()
+#        else:
+#            st.warning('오답입니다.')
+#            st.session_state["stage"] = st.session_state["stage"]+1
+#            time.sleep(2)
+#            st.rerun()
 
 def quiz_one8(index_n,quiz_list,answer,img_1): 
 
@@ -290,14 +458,19 @@ def quiz_one8(index_n,quiz_list,answer,img_1):
     # 이미지 파일을 불러옵니다.
     image_a = Image.open(f"{img_1}.png").resize((150,150))
     # 이미지를 표시합니다.
-    st.image(image_a)       
+    st.image(image_a)
 
-    for index,i in enumerate(quiz_list):
-        st.write(f'{index+1}. {i}')
+    #radio 버튼으로 문제내기
+    option = st.radio('정답 번호를 선택하세요.', 
+                    ("아래에서 선택하세요",quiz_list[0], quiz_list[1] , quiz_list[2] , quiz_list[3]),
+                    index=0
+                    )
+    st.write(answer)
+    if (option == '아래에서 선택하세요'):
+        st.empty()
 
-    if val8 := int(st.number_input('정답 번호를 입력하세요.',key='key8')):
-
-        if quiz_list[val8-1] == answer:
+    else:
+        if option == answer:
             st.info('정답입니다.')
             st.session_state["stage"] = st.session_state["stage"]+1
             st.session_state["health"] = st.session_state["health"]+10
@@ -308,6 +481,26 @@ def quiz_one8(index_n,quiz_list,answer,img_1):
             st.session_state["stage"] = st.session_state["stage"]+1
             time.sleep(2)
             st.rerun()
+
+    #text로 문제내기
+
+
+#    for index,i in enumerate(quiz_list):
+#        st.write(f'{index+1}. {i}')
+#
+#    if val8 := int(st.number_input('정답 번호를 입력하세요.',key='key8')):
+#
+#        if quiz_list[val8-1] == answer:
+#            st.info('정답입니다.')
+#            st.session_state["stage"] = st.session_state["stage"]+1
+#            st.session_state["health"] = st.session_state["health"]+10
+#            time.sleep(2)
+#            st.rerun()
+#        else:
+#            st.warning('오답입니다.')
+#            st.session_state["stage"] = st.session_state["stage"]+1
+#            time.sleep(2)
+#            st.rerun()
 
 def quiz_one9(index_n,quiz_list,answer,img_1): 
 
@@ -317,14 +510,19 @@ def quiz_one9(index_n,quiz_list,answer,img_1):
     # 이미지 파일을 불러옵니다.
     image_a = Image.open(f"{img_1}.png").resize((150,150))
     # 이미지를 표시합니다.
-    st.image(image_a)   
+    st.image(image_a)
 
-    for index,i in enumerate(quiz_list):
-        st.write(f'{index+1}. {i}')
+    #radio 버튼으로 문제내기
+    option = st.radio('정답 번호를 선택하세요.', 
+                    ("아래에서 선택하세요",quiz_list[0], quiz_list[1] , quiz_list[2] , quiz_list[3]),
+                    index=0
+                    )
+    st.write(answer)
+    if (option == '아래에서 선택하세요'):
+        st.empty()
 
-    if val9 := int(st.number_input('정답 번호를 입력하세요.',key='key9')):
-
-        if quiz_list[val9-1] == answer:
+    else:
+        if option == answer:
             st.info('정답입니다.')
             st.session_state["stage"] = st.session_state["stage"]+1
             st.session_state["health"] = st.session_state["health"]+10
@@ -335,6 +533,25 @@ def quiz_one9(index_n,quiz_list,answer,img_1):
             st.session_state["stage"] = st.session_state["stage"]+1
             time.sleep(2)
             st.rerun()
+
+    #text로 문제내기
+
+#    for index,i in enumerate(quiz_list):
+#        st.write(f'{index+1}. {i}')
+#
+#    if val9 := int(st.number_input('정답 번호를 입력하세요.',key='key9')):
+#
+#        if quiz_list[val9-1] == answer:
+#            st.info('정답입니다.')
+#            st.session_state["stage"] = st.session_state["stage"]+1
+#            st.session_state["health"] = st.session_state["health"]+10
+#            time.sleep(2)
+#            st.rerun()
+#        else:
+#            st.warning('오답입니다.')
+#            st.session_state["stage"] = st.session_state["stage"]+1
+#            time.sleep(2)
+#            st.rerun()
 
 def quiz_one10(index_n,quiz_list,answer,img_1): 
 
@@ -344,14 +561,19 @@ def quiz_one10(index_n,quiz_list,answer,img_1):
     # 이미지 파일을 불러옵니다.
     image_a = Image.open(f"{img_1}.png").resize((150,150))
     # 이미지를 표시합니다.
-    st.image(image_a)       
+    st.image(image_a)
 
-    for index,i in enumerate(quiz_list):
-        st.write(f'{index+1}. {i}')
+    #radio 버튼으로 문제내기
+    option = st.radio('정답 번호를 선택하세요.', 
+                    ("아래에서 선택하세요",quiz_list[0], quiz_list[1] , quiz_list[2] , quiz_list[3]),
+                    index=0
+                    )
+    st.write(answer)
+    if (option == '아래에서 선택하세요'):
+        st.empty()
 
-    if val10 := int(st.number_input('정답 번호를 입력하세요.',key='key10')):
-
-        if quiz_list[val10-1] == answer:
+    else:
+        if option == answer:
             st.info('정답입니다.')
             st.session_state["stage"] = st.session_state["stage"]+1
             st.session_state["health"] = st.session_state["health"]+10
@@ -362,6 +584,25 @@ def quiz_one10(index_n,quiz_list,answer,img_1):
             st.session_state["stage"] = st.session_state["stage"]+1
             time.sleep(2)
             st.rerun()
+
+    #text로 문제내기
+
+#   for index,i in enumerate(quiz_list):
+#       st.write(f'{index+1}. {i}')
+#
+#   if val10 := int(st.number_input('정답 번호를 입력하세요.',key='key10')):
+#
+#       if quiz_list[val10-1] == answer:
+#           st.info('정답입니다.')
+#           st.session_state["stage"] = st.session_state["stage"]+1
+#           st.session_state["health"] = st.session_state["health"]+10
+#           time.sleep(2)
+#           st.rerun()
+#       else:
+#           st.warning('오답입니다.')
+#           st.session_state["stage"] = st.session_state["stage"]+1
+#           time.sleep(2)
+#           st.rerun()
 
 if __name__=='__main__':
     
@@ -485,23 +726,55 @@ if __name__=='__main__':
                 final_score = st.session_state["health"]
                 user = st.session_state["name"]
                 if final_score >= 90:
-                    st.write(f'{user}님 당신은 진정한 :blue[포켓몬 지식왕!!]')
-                    st.write(f'최종 점수는 :red[{final_score}]점 입니다.')
+                    st.write('')
+                    st.title(f':blue[{user}]님 당신은 진정한 :red[포켓몬 지식왕!!]')
+                    st.title(f'최종 점수는 :red[{final_score}]점 입니다.')
+
+                    # 이미지 파일을 불러옵니다.
+                    image_a = Image.open("608.png").resize((500,500))
+                    # 이미지를 표시합니다.
+                    st.image(image_a)
+
+                    # 음악을 재생합니다.
                     st.audio("audio/winning-218995.mp3", format="audio/mpeg", loop=False,autoplay=True)
                 
                 elif final_score >= 70:
-                    st.write(f'{user}님 포켓몬 좀 아시는 군요!!')
-                    st.write(f'최종 점수는 :red[{final_score}]점 입니다.')
+                    st.write('')
+                    st.title(f':blue[{user}]님 포켓몬 좀 아시는 군요!!')
+                    st.title(f'최종 점수는 :red[{final_score}]점 입니다.')
+                    
+                    # 이미지 파일을 불러옵니다.
+                    image_a = Image.open("788.png").resize((500,500))
+                    # 이미지를 표시합니다.
+                    st.image(image_a)
+                    
+                    # 음악을 재생합니다.
                     st.audio("audio/level-win-6416.mp3", format="audio/mpeg", loop=False,autoplay=True)
 
                 elif final_score >= 50:
-                    st.warning(f'{user}님 포켓몬 공부가 필요해요!')
-                    st.write(f'최종 점수는 :red[{final_score}]점 입니다.')
+                    st.write('')
+                    st.title(f':blue[{user}]님 포켓몬 공부가 필요해요!!')
+                    st.title(f'최종 점수는 :red[{final_score}]점 입니다.')
+                    
+                    # 이미지 파일을 불러옵니다.
+                    image_a = Image.open("204.png").resize((500,500))
+                    # 이미지를 표시합니다.
+                    st.image(image_a)
+
+                    # 음악을 재생합니다.
                     st.audio("audio/negative_beeps-6008.mp3", format="audio/mpeg", loop=False,autoplay=True)
 
                 else:
-                    st.error(f'{user}님 당신은 포린이네요 ㅠㅠ')
-                    st.write(f'최종 점수는 :red[{final_score}]점 입니다.')
+                    st.write('')
+                    st.title(f':blue[{user}]님 당신은 포린이네요 ㅠㅠ')
+                    st.title(f'최종 점수는 :red[{final_score}]점 입니다.')
+                    
+                    # 이미지 파일을 불러옵니다.
+                    image_a = Image.open("197.png").resize((500,500))
+                    # 이미지를 표시합니다.
+                    st.image(image_a)
+
+                    # 음악을 재생합니다.
                     st.audio("audio/game-over-31-179699.mp3", format="audio/mpeg", loop=False,autoplay=True)             
         
                 st.stop()
