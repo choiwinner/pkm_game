@@ -74,24 +74,6 @@ def Init():
 
 def quiz_one1(index_n,quiz_list,answer,img_1): 
 
-    #with placeholder.container():
-    #st.write(f"{index_n}번째 문제입니다.")
-    #status = st.radio('정답을 맞추세요', quiz_list)
-    ##st.write(answer)
-    #if status == answer:
-    #    st.info('정답입니다.')
-    #    st.session_state["stage"] = st.session_state["stage"]+1
-    #    st.session_state["health"] = st.session_state["health"]+10
-    #else:
-    #    st.warning('오답입니다.')
-    #    st.session_state["stage"] = st.session_state["stage"]+1
-    #    st.session_state["health"] = st.session_state["health"]-10
-    #answer_n = None
-    #answer_tmp = None
-
-    #st.session_state["answer_n"] = 0
-    #st.session_state["answer"] = ''
-
     input_container = st.empty()
 
     st.write(f"{index_n}번째 문제입니다.")
@@ -107,7 +89,6 @@ def quiz_one1(index_n,quiz_list,answer,img_1):
                     ("아래에서 선택하세요",quiz_list[0], quiz_list[1] , quiz_list[2] , quiz_list[3]),
                     index=0
                     )
-    st.write(answer)
     if (option == '아래에서 선택하세요'):
         st.empty()
 
@@ -158,7 +139,6 @@ def quiz_one2(index_n,quiz_list,answer,img_1):
                     ("아래에서 선택하세요",quiz_list[0], quiz_list[1] , quiz_list[2] , quiz_list[3]),
                     index=0
                     )
-    st.write(answer)
     if (option == '아래에서 선택하세요'):
         st.empty()
 
@@ -208,7 +188,6 @@ def quiz_one3(index_n,quiz_list,answer,img_1):
                     ("아래에서 선택하세요",quiz_list[0], quiz_list[1] , quiz_list[2] , quiz_list[3]),
                     index=0
                     )
-    st.write(answer)
     if (option == '아래에서 선택하세요'):
         st.empty()
 
@@ -259,7 +238,6 @@ def quiz_one4(index_n,quiz_list,answer,img_1):
                     ("아래에서 선택하세요",quiz_list[0], quiz_list[1] , quiz_list[2] , quiz_list[3]),
                     index=0
                     )
-    st.write(answer)
     if (option == '아래에서 선택하세요'):
         st.empty()
 
@@ -311,7 +289,6 @@ def quiz_one5(index_n,quiz_list,answer,img_1):
                     ("아래에서 선택하세요",quiz_list[0], quiz_list[1] , quiz_list[2] , quiz_list[3]),
                     index=0
                     )
-    st.write(answer)
     if (option == '아래에서 선택하세요'):
         st.empty()
 
@@ -362,7 +339,6 @@ def quiz_one6(index_n,quiz_list,answer,img_1):
                     ("아래에서 선택하세요",quiz_list[0], quiz_list[1] , quiz_list[2] , quiz_list[3]),
                     index=0
                     )
-    st.write(answer)
     if (option == '아래에서 선택하세요'):
         st.empty()
 
@@ -414,7 +390,6 @@ def quiz_one7(index_n,quiz_list,answer,img_1):
                     ("아래에서 선택하세요",quiz_list[0], quiz_list[1] , quiz_list[2] , quiz_list[3]),
                     index=0
                     )
-    st.write(answer)
     if (option == '아래에서 선택하세요'):
         st.empty()
 
@@ -465,7 +440,6 @@ def quiz_one8(index_n,quiz_list,answer,img_1):
                     ("아래에서 선택하세요",quiz_list[0], quiz_list[1] , quiz_list[2] , quiz_list[3]),
                     index=0
                     )
-    st.write(answer)
     if (option == '아래에서 선택하세요'):
         st.empty()
 
@@ -517,7 +491,6 @@ def quiz_one9(index_n,quiz_list,answer,img_1):
                     ("아래에서 선택하세요",quiz_list[0], quiz_list[1] , quiz_list[2] , quiz_list[3]),
                     index=0
                     )
-    st.write(answer)
     if (option == '아래에서 선택하세요'):
         st.empty()
 
@@ -568,7 +541,6 @@ def quiz_one10(index_n,quiz_list,answer,img_1):
                     ("아래에서 선택하세요",quiz_list[0], quiz_list[1] , quiz_list[2] , quiz_list[3]),
                     index=0
                     )
-    st.write(answer)
     if (option == '아래에서 선택하세요'):
         st.empty()
 
