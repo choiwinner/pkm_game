@@ -97,12 +97,14 @@ def quiz_one1(index_n,quiz_list,answer,img_1):
             st.info('정답입니다.')
             st.session_state["stage"] = st.session_state["stage"]+1
             st.session_state["health"] = st.session_state["health"]+10
-            time.sleep(2)
+            st.audio("audio/child-says-yes-113117.mp3", format="audio/mpeg", loop=False,autoplay=True)
+            time.sleep(3)
             st.rerun()
         else:
             st.warning('오답입니다.')
             st.session_state["stage"] = st.session_state["stage"]+1
-            time.sleep(2)
+            st.audio("audio/no-no-no-242246.mp3", format="audio/mpeg", loop=False,autoplay=True)
+            time.sleep(3)
             st.rerun()
 
     #text로 문제내기
@@ -147,12 +149,14 @@ def quiz_one2(index_n,quiz_list,answer,img_1):
             st.info('정답입니다.')
             st.session_state["stage"] = st.session_state["stage"]+1
             st.session_state["health"] = st.session_state["health"]+10
-            time.sleep(2)
+            st.audio("audio/child-says-yes-113117.mp3", format="audio/mpeg", loop=False,autoplay=True)
+            time.sleep(3)
             st.rerun()
         else:
             st.warning('오답입니다.')
             st.session_state["stage"] = st.session_state["stage"]+1
-            time.sleep(2)
+            st.audio("audio/no-no-no-242246.mp3", format="audio/mpeg", loop=False,autoplay=True)
+            time.sleep(3)
             st.rerun()
 
     #text로 문제내기
@@ -196,12 +200,14 @@ def quiz_one3(index_n,quiz_list,answer,img_1):
             st.info('정답입니다.')
             st.session_state["stage"] = st.session_state["stage"]+1
             st.session_state["health"] = st.session_state["health"]+10
-            time.sleep(2)
+            st.audio("audio/child-says-yes-113117.mp3", format="audio/mpeg", loop=False,autoplay=True)            
+            time.sleep(3)
             st.rerun()
         else:
             st.warning('오답입니다.')
             st.session_state["stage"] = st.session_state["stage"]+1
-            time.sleep(2)
+            st.audio("audio/no-no-no-242246.mp3", format="audio/mpeg", loop=False,autoplay=True)
+            time.sleep(3)
             st.rerun()
 
     #text로 문제내기
@@ -246,12 +252,14 @@ def quiz_one4(index_n,quiz_list,answer,img_1):
             st.info('정답입니다.')
             st.session_state["stage"] = st.session_state["stage"]+1
             st.session_state["health"] = st.session_state["health"]+10
-            time.sleep(2)
+            st.audio("audio/child-says-yes-113117.mp3", format="audio/mpeg", loop=False,autoplay=True)      
+            time.sleep(3)
             st.rerun()
         else:
             st.warning('오답입니다.')
             st.session_state["stage"] = st.session_state["stage"]+1
-            time.sleep(2)
+            st.audio("audio/no-no-no-242246.mp3", format="audio/mpeg", loop=False,autoplay=True)
+            time.sleep(3)
             st.rerun()
 
     #text로 문제내기    
@@ -297,12 +305,14 @@ def quiz_one5(index_n,quiz_list,answer,img_1):
             st.info('정답입니다.')
             st.session_state["stage"] = st.session_state["stage"]+1
             st.session_state["health"] = st.session_state["health"]+10
-            time.sleep(2)
+            st.audio("audio/child-says-yes-113117.mp3", format="audio/mpeg", loop=False,autoplay=True)
+            time.sleep(3)
             st.rerun()
         else:
             st.warning('오답입니다.')
             st.session_state["stage"] = st.session_state["stage"]+1
-            time.sleep(2)
+            st.audio("audio/no-no-no-242246.mp3", format="audio/mpeg", loop=False,autoplay=True)
+            time.sleep(3)
             st.rerun()
 
     #text로 문제내기
@@ -347,12 +357,14 @@ def quiz_one6(index_n,quiz_list,answer,img_1):
             st.info('정답입니다.')
             st.session_state["stage"] = st.session_state["stage"]+1
             st.session_state["health"] = st.session_state["health"]+10
-            time.sleep(2)
+            st.audio("audio/child-says-yes-113117.mp3", format="audio/mpeg", loop=False,autoplay=True)
+            time.sleep(3)
             st.rerun()
         else:
             st.warning('오답입니다.')
             st.session_state["stage"] = st.session_state["stage"]+1
-            time.sleep(2)
+            st.audio("audio/no-no-no-242246.mp3", format="audio/mpeg", loop=False,autoplay=True)
+            time.sleep(3)
             st.rerun()
 
     #text로 문제내기
@@ -398,12 +410,14 @@ def quiz_one7(index_n,quiz_list,answer,img_1):
             st.info('정답입니다.')
             st.session_state["stage"] = st.session_state["stage"]+1
             st.session_state["health"] = st.session_state["health"]+10
-            time.sleep(2)
+            st.audio("audio/child-says-yes-113117.mp3", format="audio/mpeg", loop=False,autoplay=True)
+            time.sleep(3)
             st.rerun()
         else:
             st.warning('오답입니다.')
             st.session_state["stage"] = st.session_state["stage"]+1
-            time.sleep(2)
+            st.audio("audio/no-no-no-242246.mp3", format="audio/mpeg", loop=False,autoplay=True)
+            time.sleep(3)
             st.rerun()
 
     #text로 문제내기
@@ -448,12 +462,14 @@ def quiz_one8(index_n,quiz_list,answer,img_1):
             st.info('정답입니다.')
             st.session_state["stage"] = st.session_state["stage"]+1
             st.session_state["health"] = st.session_state["health"]+10
-            time.sleep(2)
+            st.audio("audio/child-says-yes-113117.mp3", format="audio/mpeg", loop=False,autoplay=True)
+            time.sleep(3)
             st.rerun()
         else:
             st.warning('오답입니다.')
             st.session_state["stage"] = st.session_state["stage"]+1
-            time.sleep(2)
+            st.audio("audio/no-no-no-242246.mp3", format="audio/mpeg", loop=False,autoplay=True)
+            time.sleep(3)
             st.rerun()
 
     #text로 문제내기
@@ -499,12 +515,14 @@ def quiz_one9(index_n,quiz_list,answer,img_1):
             st.info('정답입니다.')
             st.session_state["stage"] = st.session_state["stage"]+1
             st.session_state["health"] = st.session_state["health"]+10
-            time.sleep(2)
+            st.audio("audio/child-says-yes-113117.mp3", format="audio/mpeg", loop=False,autoplay=True)
+            time.sleep(3)
             st.rerun()
         else:
             st.warning('오답입니다.')
             st.session_state["stage"] = st.session_state["stage"]+1
-            time.sleep(2)
+            st.audio("audio/no-no-no-242246.mp3", format="audio/mpeg", loop=False,autoplay=True)
+            time.sleep(3)
             st.rerun()
 
     #text로 문제내기
@@ -549,12 +567,14 @@ def quiz_one10(index_n,quiz_list,answer,img_1):
             st.info('정답입니다.')
             st.session_state["stage"] = st.session_state["stage"]+1
             st.session_state["health"] = st.session_state["health"]+10
-            time.sleep(2)
+            st.audio("audio/child-says-yes-113117.mp3", format="audio/mpeg", loop=False,autoplay=True)
+            time.sleep(3)
             st.rerun()
         else:
             st.warning('오답입니다.')
             st.session_state["stage"] = st.session_state["stage"]+1
-            time.sleep(2)
+            st.audio("audio/no-no-no-242246.mp3", format="audio/mpeg", loop=False,autoplay=True)
+            time.sleep(3)
             st.rerun()
 
     #text로 문제내기
