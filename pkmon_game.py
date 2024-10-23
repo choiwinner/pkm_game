@@ -749,12 +749,26 @@ if __name__=='__main__':
                     st.title(f'최종 점수는 :red[{final_score}]점 입니다.')
                     
                     # 이미지 파일을 불러옵니다.
-                    image_a = Image.open("204.png").resize((500,500))
+                    image_a = Image.open("548.png").resize((500,500))
                     # 이미지를 표시합니다.
                     st.image(image_a)
 
                     # 음악을 재생합니다.
                     st.audio("audio/negative_beeps-6008.mp3", format="audio/mpeg", loop=False,autoplay=True)
+
+                elif final_score >= 30:
+                    st.write('')
+                    st.title(f':blue[{user}]님 포켓몬 공부가 필요해요!!')
+                    st.title(f'최종 점수는 :red[{final_score}]점 입니다.')
+                    
+                    # 이미지 파일을 불러옵니다.
+                    image_a = Image.open("37.png").resize((500,500))
+                    # 이미지를 표시합니다.
+                    st.image(image_a)
+
+                    # 음악을 재생합니다.
+                    st.audio("audio/negative_beeps-6008.mp3", format="audio/mpeg", loop=False,autoplay=True)
+
 
                 else:
                     st.write('')
@@ -762,7 +776,7 @@ if __name__=='__main__':
                     st.title(f'최종 점수는 :red[{final_score}]점 입니다.')
                     
                     # 이미지 파일을 불러옵니다.
-                    image_a = Image.open("197.png").resize((500,500))
+                    image_a = Image.open("209.png").resize((500,500))
                     # 이미지를 표시합니다.
                     st.image(image_a)
 
